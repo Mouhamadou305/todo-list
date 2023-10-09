@@ -1,10 +1,17 @@
 # TodoList
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.5.
+This project was a tutorial to understand how to use angular. It is a todo list. You can :
+* Add a task by filling the text input with the description of your task and clicking on the add button.
+* Delete a task by clicking on the cross button on the right of a task.
+* Check or uncheck a task by clicking on it.
+
+## JSON-server
+
+Install json server with npm and run it in the root folder of the todo-list application. On the environment.ts file, the endpoint of the json-server is specified. You can change it if needed.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files. 
 
 ## Code scaffolding
 
