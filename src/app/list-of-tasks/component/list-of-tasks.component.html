@@ -1,0 +1,8 @@
+<div id="myDIV" class="header">
+    <h2>My To Do List</h2>
+    <input type="text" [(ngModel)]="description" placeholder="Title..." (keyup.enter)="addTask()">
+    <span (click)="addTask()" class="addBtn">Add</span>
+</div>
+<ul id="myUL">
+    <li *ngFor="let task of tasks;" [class]="task.state=='checked'?'checked':''" (click)="checkTask(task.id, task.state)">{{task.description}}<span class="close" (click)="deleteTask(task.id)">x</span></li>
+</ul>

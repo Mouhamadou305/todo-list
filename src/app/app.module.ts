@@ -1,18 +1,24 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ListOfTasksComponent } from './list-of-tasks/component/list-of-tasks.component';
+import { ListOfTasksService } from './list-of-tasks/service/list-of-tasks.service';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListOfTasksComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule,
+    FormsModule
+   
   ],
-  providers: [],
+  providers: [ListOfTasksService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
